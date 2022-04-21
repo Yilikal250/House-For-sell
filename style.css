@@ -5,12 +5,10 @@
     padding: 0px;
   }
 
-  header ul {
+.desk-bar {
     display: none;
 }
- nav ul {
-     display: none;
- }
+
  .red-btn-container-desktop{
      display: none;
  }
@@ -18,6 +16,14 @@
  footer{
 display: none;
 }
+
+.below-foot-about {
+    display: none;
+}
+
+.house-cards:nth-child(n+3) {
+    display: none;
+  }
 
  .mobile-humberg-container {
     background-image: url("/image/photo_2022-04-18_15-43-00.jpg");
@@ -38,6 +44,37 @@ display: none;
     
  }
 
+ #popup-1 {
+     position:fixed;
+     background-color: #d3d3d3;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     text-align: center;
+     display: none;
+}
+
+#popup-1 li {
+    margin-top: 60px;
+    font-size: larger;
+    font-family:cocogoose, sans-serif; 
+    color: #EC5242;
+}
+
+#close-button {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #d3d3d3;
+    font-size: 1.8rem;
+    font-family: Inter, sans-serif;
+    color: #EC5242;
+    mix-blend-mode: normal;
+    box-shadow: 0 48px 48px rgb(37 47 137 / 8%);
+    margin-top: 15px;
+    margin-left: 300px;
+}
  .text-description{
     position: relative;
     background-image: url("/image/colorfullcircle2.png");
@@ -67,8 +104,7 @@ font-weight: 800;
  
 }
 
-.quote {
-height: 50px;    
+.quote {  
 background-color: white;     
 margin-bottom: 55px;
 font-family: lato, serif;
@@ -136,9 +172,9 @@ margin-bottom: 35px;
 #title-para{
     color: #EC5242;
     font-weight: bolder;
-    margin-left: 15px;
+    margin-left: 9px;
     margin-top: 25px;
-    font-size: 18px;
+    font-size: 16px;
 width: 160px;
 margin-right: 15px;
 font-family: lato, serif;
@@ -147,15 +183,20 @@ font-family: lato, serif;
 #description-para{
 position:absolute;
 color: white;
-font-size: 15px;
+font-size: 12px;
 margin-top: 15px;
 text-align: left;
 margin-top: 15px;
-margin-left: 200px;
-width: 60%;
+margin-left: 165px;
 color: white;
 font-family: lato, serif;
 
+}
+
+.icons {
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 16px;
 }
 
 .red-btn-container {
@@ -169,10 +210,43 @@ font-family: lato, serif;
     justify-content: center;
     margin: auto;
     background-color: #EC5242;
+    height: 50px;
+    font-family: lato, serif;
+    font-weight: bold;
+}
+
+.more {
+    width: 355px;
+    color: black;
+    border: 1px solid #272a31;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color:rgba(255, 255, 255, 0.804);
     margin-top: 35px;
     height: 50px;
     font-family: lato, serif;
     font-weight: bold;
+    margin-top: 70%;
+    margin-bottom: 20px;
+}
+
+.less {
+    display: flex;
+    width: 355px;
+    color: black;
+    border: 1px solid #272a31;
+    padding: 10px;
+    justify-content: center;
+    margin: auto;
+    background-color:rgba(255, 255, 255, 0.804);
+    margin-top: 35px;
+    height: 50px;
+    font-family: lato, serif;
+    font-weight: bold;
+    margin-top: 800px;
+    margin-bottom: 20px;
 }
 
 .house-detail hr {
@@ -233,6 +307,10 @@ font-size: 20px;
     margin-top: 10px;
 }
 
+.hide-card {
+    display: none;
+  }
+
 }
 
  @media (min-width: 768px){
@@ -241,6 +319,14 @@ font-size: 20px;
         margin: 0px;
         padding: 0px;
       }
+
+#close-button {
+    display: none;
+}
+
+ .morebtn{
+     display: none;
+ }     
 .below-foot-about{
     display: none;
 }
@@ -260,7 +346,6 @@ font-size: 20px;
    .red-btn-container {
        display: none;
    }
-
 
     html,
     body {
